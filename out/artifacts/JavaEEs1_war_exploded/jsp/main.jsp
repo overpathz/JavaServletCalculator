@@ -11,6 +11,11 @@
 <%@ page import="models.Equation" %>
 <html>
 <head>
+    <style>
+        .font1 {
+            font-size: 30px;
+        }
+    </style>
     <title>MAIN</title>
 </head>
 <body>
@@ -31,7 +36,7 @@
 
     <br><br>
 
-    <div>
+    <div class="font1">
         <p>
             <b>Result of <%=eq1%> = <%=eq%></b>
         </p>
