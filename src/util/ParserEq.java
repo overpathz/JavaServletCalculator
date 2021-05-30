@@ -43,14 +43,11 @@ public class ParserEq {
         double rightD = Double.parseDouble(right);
 
 
-        if (sign.equals("+")) {
-            result = leftD + rightD;
-        } else if (sign.equals("-")) {
-            result = leftD - rightD;
-        } else if (sign.equals("/")) {
-            result = leftD / rightD;
-        } else if (sign.equals("*")) {
-            result = leftD * rightD;
+       switch (sign) {
+            case "+" -> result = leftD + rightD;
+            case "-" -> result = leftD - rightD;
+            case "/" -> result = leftD / rightD;
+            case "*" -> result = leftD * rightD;
         }
 
         return result;
